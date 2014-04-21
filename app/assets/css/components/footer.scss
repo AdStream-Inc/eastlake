@@ -1,0 +1,49 @@
+.footer-container {
+  padding: 40px;
+  background: #000;
+  color: #fff;
+
+  hr {
+    border-color: #1f1f1f;
+  }
+}
+
+.footer-social {
+  width: 28px;
+  height: 28px;
+  text-align: center;
+  line-height: 28px;
+  color: #fff;
+  display: inline-block;
+  margin-left: 4px;
+  background: #1f1f1f;
+  transition: background .3s ease;
+
+  &:hover {
+    color: #000;
+    text-decoration: none;
+    background: $yellow;
+  }
+}
+
+.footer-nav {
+  & > li {
+    display: inline-block;
+    float: left;
+  }
+
+  & > li > a {
+    padding: 5px 10px;
+    display: block;
+    color: #fff;
+
+    &:hover {
+      color: $yellow;
+      text-decoration: none;
+    }
+  }
+
+  & > li > a.btn-outline {
+    margin-left: 10px;
+  }
+}

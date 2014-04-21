@@ -1,0 +1,15 @@
+.btn {
+  border-radius: 0;
+}
+
+.btn-outline {
+  border: 1px solid $yellow !important;
+  color: $yellow !important;
+  background: none !important;
+  transition: all .3s ease;
+
+  &:hover {
+    background: $yellow !important;
+    color: #000 !important;
+  }
+}
