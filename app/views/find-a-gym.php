@@ -17,7 +17,7 @@
                 <p class="small flush-bottom">{{ location.street }}</p>
                 <p class="small flush-bottom">{{ location.city }}, {{ location.state }}, {{ location.zip }}</p>
                 <p class="small">{{ location.phone }}</p>
-                <a href="#" class="btn btn-sm btn-default">More Details</a>
+                <a href="{{ root }}locations/{{ location.route }}" class="btn btn-sm btn-default">More Details</a>
               </li>
             {% endfor %}
           </ul>
@@ -26,6 +26,7 @@
       <div class="col-md-8">
         <div class="map-container">
           <div id="map-element"></div>
+          <button class="btn btn-success btn-block">Set As My Gym</button>
         </div>
       </div>
     </div>
@@ -34,4 +35,6 @@
 
 {% block scripts %}
   <script src="//maps.googleapis.com/maps/api/js?sensor=false"></script>
+  <script src="{{ root }}js/components/google-map.js"></script>
+  <script src="{{ root }}js/components/map-app.js"></script>
 {% endblock %}

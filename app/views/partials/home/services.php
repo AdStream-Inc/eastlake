@@ -1,13 +1,13 @@
 <h1 class="section-title">Services</h1>
 <div class="row">
   <div class="col-md-4 col-sm-4 col-xs-6">
-    <a href="#" class="callout">
+    <a href="{{ root }}services/group-fitness" class="callout">
       <img class="callout-img" src="images/homepage/group-fitness-callout.png">
       <p class="callout-title">Group Fitness <span class="pull-right fa fa-chevron-right callout-arrow"></span></p>
     </a>
   </div>
   <div class="col-md-4 col-sm-4 col-xs-6">
-    <a href="#" class="callout">
+    <a href="{{ root }}services/message" class="callout">
       <img class="callout-img" src="images/homepage/message-callout.png">
       <p class="callout-title">Message <span class="pull-right fa fa-chevron-right callout-arrow"></span></p>
     </a>
@@ -31,7 +31,7 @@
     </a>
   </div>
   <div class="col-md-4 col-sm-4 col-xs-6">
-    <a href="#" class="callout">
+    <a href="{{ root }}services/child-care" class="callout">
       <img class="callout-img" src="images/homepage/child-care-callout.png">
       <p class="callout-title">Child Care <span class="pull-right fa fa-chevron-right callout-arrow"></span></p>
     </a>
