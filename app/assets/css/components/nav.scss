@@ -46,6 +46,10 @@
   right: auto;
 }
 
+.navbar > .container .navbar-brand {
+  margin-left: 0;
+}
+
 @media (min-width: 768px) {
   .nav-main > li > a.btn-outline {
     margin-left: 20px;

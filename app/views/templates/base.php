@@ -10,6 +10,7 @@
       <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.1.1/css/bootstrap.min.css" />
       <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.min.css" />
       <link rel="stylesheet" href="{{ root }}css/app.min.css">
+      {% block stylesheets %}{% endblock %}
 
       <script>
         var URL = {
@@ -49,12 +50,12 @@
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="0">Services <b class="caret"></b></a>
               <ul class="dropdown-menu">
-                <li><a href="#">Group Fitness</a></li>
-                <li><a href="#">Message</a></li>
+                <li><a href="{{ root }}services/group-fitness">Group Fitness</a></li>
+                <li><a href="{{ root }}services/message">Message</a></li>
                 <li><a href="#">Silver Sneakers</a></li>
                 <li><a href="#">Facility Rental</a></li>
                 <li><a href="#">Fitness Training</a></li>
-                <li><a href="#">Child Car</a></li>
+                <li><a href="{{ root }}services/child-care">Child Care</a></li>
                 <li><a href="#">Brazilian Jiu Jitsu</a></li>
                 <li><a href="#">Strength &amp; Conditioning</a></li>
               </ul>
@@ -93,7 +94,7 @@
     </div>
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.1.1/js/bootstrap.min.js"></script>
-    {% block scripts %}{% endblock %}
     <script src="{{root}}js/app.min.js"></script>
+    {% block scripts %}{% endblock %}
   </body>
 </html>

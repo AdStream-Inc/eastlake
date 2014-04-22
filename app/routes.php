@@ -1,11 +1,5 @@
 <?php
 
-function ApiRequest(){
-  $app = \Slim\Slim::getInstance();
-  $app->view(new \JsonApiView());
-  $app->add(new \JsonApiMiddleware());
-}
-
 $app->get('/', function() use($app) {
   $app->render('home.php',
     array(
@@ -22,9 +16,76 @@ $app->get('/about', function() use($app) {
   );
 });
 
+$app->group('/sports', function() use($app) {
+  $app->get('/tennis', function() use($app) {
+    $app->render('sports/tennis.php',
+      array(
+        'title' => 'Tennis',
+      )
+    );
+  });
+
+  $app->get('/racquetball', function() use($app) {
+    $app->render('sports/racquetball.php',
+      array(
+        'title' => 'Racquetball',
+      )
+    );
+  });
+
+  $app->get('/soccer', function() use($app) {
+    $app->render('sports/soccer.php',
+      array(
+        'title' => 'Soccer',
+      )
+    );
+  });
+
+  $app->get('/football', function() use($app) {
+    $app->render('sports/football.php',
+      array(
+        'title' => 'Football',
+      )
+    );
+  });
+});
+
+$app->group('/services', function() use($app) {
+  $app->get('/group-fitness', function() use($app) {
+    $app->render('services/group-fitness.php',
+      array(
+        'title' => 'Group Fitness'
+      )
+    );
+  });
+
+  $app->get('/message', function() use($app) {
+    $app->render('services/message.php',
+      array(
+        'title' => 'Message'
+      )
+    );
+  });
+
+  $app->get('/child-care', function() use($app) {
+    $app->render('services/child-care.php',
+      array(
+        'title' => 'Child Care'
+      )
+    );
+  });
+});
+
+function ApiRequest(){
+  $app = \Slim\Slim::getInstance();
+  $app->view(new \JsonApiView());
+  $app->add(new \JsonApiMiddleware());
+}
+
 $locations = array(
   array(
     'title' => 'Eastlake Athletic Club Goshen',
+    'route' => 'eastlake-goshen',
     'street' => '1400 Fairfield Ave.',
     'city' => 'Goshen',
     'state' => 'IN',
@@ -35,6 +96,7 @@ $locations = array(
   ),
   array(
     'title' => 'Eastlake Athletic Club Elkhart',
+    'route' => 'eastlake-goshen',
     'street' => '3400 Henke Rd.',
     'city' => 'Elkhart',
     'state' => 'IN',
@@ -45,6 +107,7 @@ $locations = array(
   ),
   array(
     'title' => 'Eastlake 24 Elkhart C.R. 7',
+    'route' => 'eastlake-goshen',
     'street' => '5150 Verdant Dr.',
     'city' => 'Elkhart',
     'state' => 'IN',
@@ -55,6 +118,7 @@ $locations = array(
   ),
   array(
     'title' => 'Eastlake 24 Middlebury',
+    'route' => 'eastlake-goshen',
     'street' => '304 N. Main',
     'city' => 'Middlebury',
     'state' => 'IN',
@@ -67,49 +131,29 @@ $locations = array(
   // array(),
 );
 
-$app->get('/api/locations', 'ApiRequest', function() use($app, $locations) {
-  $app->render(200, array(
-    'locations' => $locations
-  ));
-});
-
-$app->get('/locations', function() use($app, $locations) {
-  $app->render('find-a-gym.php',
-    array(
-      'title' => 'Find A Gym',
+$app->group('/api', function() use($app, $locations) {
+  $app->get('/locations', 'ApiRequest', function() use($app, $locations) {
+    $app->render(200, array(
       'locations' => $locations
-    )
-  );
+    ));
+  });
 });
 
-$app->get('/sports/tennis', function() use($app) {
-  $app->render('sports/tennis.php',
-    array(
-      'title' => 'Tennis',
-    )
-  );
-});
+$app->group('/locations', function() use($app, $locations) {
+  $app->get('/', function() use($app, $locations) {
+    $app->render('find-a-gym.php',
+      array(
+        'title' => 'Find A Gym',
+        'locations' => $locations
+      )
+    );
+  });
 
-$app->get('/sports/racquetball', function() use($app) {
-  $app->render('sports/racquetball.php',
-    array(
-      'title' => 'Racquetball',
-    )
-  );
-});
-
-$app->get('/sports/soccer', function() use($app) {
-  $app->render('sports/soccer.php',
-    array(
-      'title' => 'Soccer',
-    )
-  );
-});
-
-$app->get('/sports/football', function() use($app) {
-  $app->render('sports/football.php',
-    array(
-      'title' => 'Football',
-    )
-  );
+  $app->get('/eastlake-goshen', function() use($app) {
+    $app->render('gyms/eastlake-goshen.php',
+      array(
+        'title' => 'Eastlake Athletic Club Goshen'
+      )
+    );
+  });
 });
