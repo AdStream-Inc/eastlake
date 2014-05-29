@@ -3,7 +3,7 @@
   $('.map-item').eq(0).addClass('active');
 
   $(window).on('load', function() {
-    var url = '/api/locations';
+    var url = URL.root + '/api/locations';
     var markers = [];
 
     EastlakeMap.init();
