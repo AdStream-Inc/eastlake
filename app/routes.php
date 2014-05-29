@@ -74,6 +74,30 @@ $app->group('/services', function() use($app) {
       )
     );
   });
+
+  $app->get('/facility-rental', function() use($app) {
+    $app->render('services/facility-rental.php',
+      array(
+        'title' => 'Facility Rental'
+      )
+    );
+  });
+
+  $app->get('/brazilian-jiu-jitsu', function() use($app) {
+    $app->render('services/brazilian-jiu-jitsu.php',
+      array(
+        'title' => 'Brazilian Jiu Jitsu'
+      )
+    );
+  });
+
+  $app->get('/strength-and-conditioning', function() use($app) {
+    $app->render('services/strength-and-conditioning.php',
+      array(
+        'title' => 'Strength & Conditioning'
+      )
+    );
+  });
 });
 
 function ApiRequest(){

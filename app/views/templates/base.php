@@ -53,11 +53,11 @@
                 <li><a href="{{ root }}services/group-fitness">Group Fitness</a></li>
                 <li><a href="{{ root }}services/message">Message</a></li>
                 <li><a href="#">Silver Sneakers</a></li>
-                <li><a href="#">Facility Rental</a></li>
+                <li><a href="{{ root }}services/facility-rental">Facility Rental</a></li>
                 <li><a href="#">Fitness Training</a></li>
                 <li><a href="{{ root }}services/child-care">Child Care</a></li>
-                <li><a href="#">Brazilian Jiu Jitsu</a></li>
-                <li><a href="#">Strength &amp; Conditioning</a></li>
+                <li><a href="{{ root }}services/brazilian-jiu-jitsu">Brazilian Jiu Jitsu</a></li>
+                <li><a href="{{ root }}services/strength-and-conditioning">Strength &amp; Conditioning</a></li>
               </ul>
             </li>
             <li><a href="#">Contact</a></li>
