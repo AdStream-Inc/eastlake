@@ -22,16 +22,10 @@ var EastlakeMap = (function(document, window, undefined) {
             return this.map;
         },
         geocoder: new google.maps.Geocoder(),
-        geocode: function(address) {
-            return this.geocoder.geocode({'address': address}, function(res) {
-                console.log(res[0].geometry);
-            });
-        },
-        generateMarker: function(data) {
+        generateMarker: function(lat, lng) {
             var self = this;
             return new google.maps.Marker({
-                position: new google.maps.LatLng(data.latitude, data.longitude),
-                title: data.title,
+                position: new google.maps.LatLng(lat, lng),
                 map: self.map
             });
         },
@@ -65,12 +59,10 @@ var EastlakeMap = (function(document, window, undefined) {
 
             return this;
         },
-        marker: function(data) {
-            return privateVars.generateMarker(data);
+        marker: function(lat, lng) {
+            return privateVars.generateMarker(lat, lng);
         },
-        geocode: function(address) {
-            return privateVars.geocode(address);
-        },
+        geocoder: privateVars.geocoder,
         mouseover: privateVars.onMouseover,
         mouseout: privateVars.onMouseout,
         clicked: privateVars.onClick

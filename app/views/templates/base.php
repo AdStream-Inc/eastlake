@@ -30,12 +30,13 @@
           </button>
           <a class="navbar-brand" href="{{ root }}">
             <img class="logo-icon" src="{{ root }}images/logo.png" />
-            <img class="logo-text" src="{{ root }}images/logo-text.png" />
+            <!-- <img class="logo-text" src="{{ root }}images/logo-text.png" /> -->
           </a>
         </div>
         <div class="collapse navbar-collapse" id="main-nav-collapse">
           <ul class="nav navbar-nav navbar-right nav-main">
             <li><a {% if (uri == '/about') %} class="active" {% endif %} href="{{ root }}about">About</a></li>
+            <li><a {% if (uri == '/membership') %} class="active" {% endif %} href="{{ root }}membership">Membership</a></li>
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="0">Sports <b class="caret"></b></a>
               <ul class="dropdown-menu">
@@ -52,16 +53,16 @@
               <ul class="dropdown-menu">
                 <li><a href="{{ root }}services/group-fitness">Group Fitness</a></li>
                 <li><a href="{{ root }}services/message">Message</a></li>
-                <li><a href="#">Silver Sneakers</a></li>
+                <li><a target="_blank" href="http://silversneakers.com">Silver Sneakers</a></li>
                 <li><a href="{{ root }}services/facility-rental">Facility Rental</a></li>
-                <li><a href="#">Fitness Training</a></li>
+                <li><a href="{{ root }}services/fitness-training">Fitness Training</a></li>
                 <li><a href="{{ root }}services/child-care">Child Care</a></li>
                 <li><a href="{{ root }}services/brazilian-jiu-jitsu">Brazilian Jiu Jitsu</a></li>
                 <li><a href="{{ root }}services/strength-and-conditioning">Strength &amp; Conditioning</a></li>
               </ul>
             </li>
             <li><a href="#">Contact</a></li>
-            <li><a href="{{ root }}locations" class="btn-outline">Find a Gym</a></li>
+            <li><a href="{{ root }}locations" class="btn-outline">Find a Club</a></li>
           </ul>
         </div>
       </div>
@@ -74,21 +75,25 @@
     </div>
     <div class="footer-container">
       <div class="container">
-        <p>
-          Get In <strong>Touch</strong>
-          <a href="https://www.facebook.com/EastlakeAthleticClub" class="fa fa-facebook footer-social"></a>
-          <a href="https://twitter.com/EastlakeAthClub" class="fa fa-twitter footer-social"></a>
-          <a href="http://www.youtube.com/user/EastlakeAthleticClub" class="fa fa-youtube-play footer-social"></a>
-        </p>
+        <div class="clearfix">
+          <p class="pull-left">
+            Get In <strong>Touch</strong>
+            <a href="https://www.facebook.com/EastlakeAthleticClub" class="fa fa-facebook footer-social"></a>
+            <a href="https://twitter.com/EastlakeAthClub" class="fa fa-twitter footer-social"></a>
+            <a href="http://www.youtube.com/user/EastlakeAthleticClub" class="fa fa-youtube-play footer-social"></a>
+          </p>
+          <a href="{{ root }}franchise" class="franchise pull-right">Find out about our franchising opportunities</a>
+        </div>
         <hr />
         <p class="pull-left">&copy; Copyright <?php echo date('Y'); ?> Eastlake Athletic Clubs</p>
         <ul class="footer-nav nav-inline pull-right">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Sports</a></li>
-          <li><a href="#">Services</a></li>
-          <li><a href="#">Contact</a></li>
-          <li><a href="{{ root }}locations" class="btn-outline">Find Gym</a></li>
+          <li><a href="{{ root }}">Home</a></li>
+          <li><a href="{{ root }}about">About</a></li>
+          <li><a href="{{ root }}membership">Membership</a></li>
+          <li><a href="{{ root }}sports/tennis">Sports</a></li>
+          <li><a href="{{ root }}services/group-fitness">Services</a></li>
+          <li><a href="{{ root }}contact">Contact</a></li>
+          <li><a href="{{ root }}locations" class="btn-outline">Find A Club</a></li>
         </ul>
       </div>
     </div>

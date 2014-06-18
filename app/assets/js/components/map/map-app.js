@@ -10,11 +10,18 @@
 
     $.get(url, function(res) {
       $.each(res.locations, function() {
-        var marker = EastlakeMap.marker(this);
+        var geoAddress = this.street + ' ' + this.city + ',' + this.state + ' ' + this.zip;
 
-        console.log(EastlakeMap.geocode(this.street + ',' + this.city + ',' + this.state + ',' + this.zip));
+        EastlakeMap.geocoder.geocode({ address: geoAddress }, function(res) {
+          if (res && res.length) {
+            var location = res[0].geometry.location;
+            var marker = EastlakeMap.marker(location.lat(), location.lng());
 
-        markers.push(marker);
+            console.log(marker);
+          }
+
+          markers.push(marker);
+        });
       });
 
       $('.map-item').on('click', function() {
