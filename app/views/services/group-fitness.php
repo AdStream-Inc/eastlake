@@ -4,8 +4,8 @@
 
 {% block main %}
   <h1 class="section-title">{{ title }}</h1>
-  <p>Eastlake Athletic Club will bring you a variety of the best classes in today's fitness industry:</p>
-  <div class="row">
+  <p>Eastlake Athletic Club will provide you with a variety of the best classes in todays fitness industry. To find out what classes are offered at each club go to <a href="{{root}}locations">Find a Club</a> and click on the group fitness schedule for your club.</p>
+  <!-- <div class="row">
     <div class="col-md-6">
       <div class="panel panel-default">
         <div class="panel-heading">
@@ -115,7 +115,7 @@
         </div>
       </div>
     </div>
-  </div>
+  </div> -->
 {% endblock %}
 
 {% block scripts %}

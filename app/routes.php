@@ -16,6 +16,22 @@ $app->get('/about', function() use($app) {
   );
 });
 
+$app->get('/franchise', function() use($app) {
+  $app->render('franchise.php',
+    array(
+      'title' => 'Franchise',
+    )
+  );
+});
+
+$app->get('/membership', function() use($app) {
+  $app->render('membership.php',
+    array(
+      'title' => 'Membership',
+    )
+  );
+});
+
 $app->group('/sports', function() use($app) {
   $app->get('/tennis', function() use($app) {
     $app->render('sports/tennis.php',
@@ -98,6 +114,14 @@ $app->group('/services', function() use($app) {
       )
     );
   });
+
+  $app->get('/fitness-training', function() use($app) {
+    $app->render('services/fitness-training.php',
+      array(
+        'title' => 'Fitness Training'
+      )
+    );
+  });
 });
 
 function ApiRequest(){
@@ -106,54 +130,7 @@ function ApiRequest(){
   $app->add(new \JsonApiMiddleware());
 }
 
-$locations = array(
-  array(
-    'title' => 'Eastlake Athletic Club Goshen',
-    'route' => 'eastlake-goshen',
-    'street' => '1400 Fairfield Ave.',
-    'city' => 'Goshen',
-    'state' => 'IN',
-    'zip' => '46526',
-    'phone' => '574-533-2498',
-    'latitude' => '41.572844',
-    'longitude' => '-85.81538499999999'
-  ),
-  array(
-    'title' => 'Eastlake Athletic Club Elkhart',
-    'route' => 'eastlake-goshen',
-    'street' => '3400 Henke Rd.',
-    'city' => 'Elkhart',
-    'state' => 'IN',
-    'zip' => '46514',
-    'phone' => '574-264-0611',
-    'latitude' => '41.716977',
-    'longitude' => '-85.94020710000001'
-  ),
-  array(
-    'title' => 'Eastlake 24 Elkhart C.R. 7',
-    'route' => 'eastlake-goshen',
-    'street' => '5150 Verdant Dr.',
-    'city' => 'Elkhart',
-    'state' => 'IN',
-    'zip' => '46517',
-    'phone' => '574-293-6899',
-    'latitude' => '41.678301',
-    'longitude' => '-85.705308'
-  ),
-  array(
-    'title' => 'Eastlake 24 Middlebury',
-    'route' => 'eastlake-goshen',
-    'street' => '304 N. Main',
-    'city' => 'Middlebury',
-    'state' => 'IN',
-    'zip' => '46540',
-    'phone' => '574-821-1560',
-    'latitude' => '41.6745949',
-    'longitude' => '-85.88951500000002'
-  ),
-  // array(),
-  // array(),
-);
+$locations = require_once('locations.php');
 
 $app->group('/api', function() use($app, $locations) {
   $app->get('/locations', 'ApiRequest', function() use($app, $locations) {
@@ -167,16 +144,66 @@ $app->group('/locations', function() use($app, $locations) {
   $app->get('/', function() use($app, $locations) {
     $app->render('find-a-gym.php',
       array(
-        'title' => 'Find A Gym',
+        'title' => 'Find A Club',
         'locations' => $locations
       )
     );
   });
 
-  $app->get('/eastlake-goshen', function() use($app) {
+  $app->get('/eastlake-goshen', function() use($app, $locations) {
+    $location = $locations['eastlake-goshen'];
     $app->render('gyms/eastlake-goshen.php',
       array(
-        'title' => 'Eastlake Athletic Club Goshen'
+        'title' => 'Eastlake Athletic Club - Goshen',
+        'location' => $location
+      )
+    );
+  });
+
+  $app->get('/eastlake-nappanee', function() use($app) {
+    $app->render('gyms/eastlake-nappanee.php',
+      array(
+        'title' => 'Eastlake 24 Nappanee'
+      )
+    );
+  });
+
+  $app->get('/eastlake-syracuse', function() use($app) {
+    $app->render('gyms/eastlake-syracuse.php',
+      array(
+        'title' => 'Eastlake 24 Syracuse'
+      )
+    );
+  });
+
+  $app->get('/eastlake-middlebury', function() use($app) {
+    $app->render('gyms/eastlake-middlebury.php',
+      array(
+        'title' => 'Eastlake 24 Middlebury'
+      )
+    );
+  });
+
+  $app->get('/eastlake-northpointe', function() use($app) {
+    $app->render('gyms/eastlake-northpointe.php',
+      array(
+        'title' => 'Eastlake 24 Northpointe'
+      )
+    );
+  });
+
+  $app->get('/eastlake-17', function() use($app) {
+    $app->render('gyms/eastlake-17.php',
+      array(
+        'title' => 'Eastlake 24 CR 17'
+      )
+    );
+  });
+
+  $app->get('/eastlake-elkhart', function() use($app) {
+    $app->render('gyms/eastlake-elkhart.php',
+      array(
+        'title' => 'Eastlake Athletic Club - Elkhart'
       )
     );
   });

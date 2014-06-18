@@ -6,10 +6,10 @@
   <div class="hero-container">
     <div class="hero-inner container clearfix">
       <div class="hero-callout fadeInLeft">
-        <h1>6 Locations</h1>
+        <h1>7 Locations</h1>
         <h1 class="sub">To Choose From</h1>
-        <p>Eastlake Athletic Clubs are Elkhart County’s premier racquet and fitness complexes.</p>
-        <a href="{{ root }}locations" class="btn-outline btn btn-lg shake">Find A Gym</a>
+        <p>Eastlake Athletic clubs are Elkhart county's largest local family owned sport and 24 hour fitness clubs.</p>
+        <a href="{{ root }}locations" class="btn-outline btn btn-lg shake">Find A Club</a>
       </div>
       <div class="hero-img pull-right fadeInRight">
         <img src="images/homepage/home-hero.png" />

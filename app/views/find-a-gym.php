@@ -26,7 +26,6 @@
       <div class="col-md-8">
         <div class="map-container">
           <div id="map-element"></div>
-          <button class="btn btn-success btn-block">Set As My Gym</button>
         </div>
       </div>
     </div>

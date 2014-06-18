@@ -8,7 +8,7 @@
   <p><strong>This program is absolutely free to members!</strong></p>
   <h3 class="section-sub-title">Childcare Hours</h3>
   <div class="row">
-    <div class="col-md-6">
+    <div class="col-md-4">
       <div class="panel panel-default">
         <div class="panel-heading">Elkhart Hours</div>
         <table class="table">
@@ -47,9 +47,36 @@
         </table>
       </div>
     </div>
-    <div class="col-md-6">
+    <div class="col-md-4">
       <div class="panel panel-default">
         <div class="panel-heading">Goshen Hours</div>
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Day</th>
+              <th>Hours</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Tuesday</td>
+              <td>4 PM - 7 PM</td>
+            </tr>
+            <tr>
+              <td>Wednesday</td>
+              <td>4:45 PM - 7 PM</td>
+            </tr>
+            <tr>
+              <td>Thursday</td>
+              <td>4 PM - 7 PM</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="panel panel-default">
+        <div class="panel-heading">Middlebury Hours</div>
         <table class="table">
           <thead>
             <tr>
