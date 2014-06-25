@@ -9,10 +9,7 @@
         <div class="map-sidebar-container">
           <ul class="map-sidebar">
             {% for key, location in locations %}
-              {% if key == (locations|length - 1) %}
-                {% set modifier = 'last' %}
-              {% endif %}
-              <li data-id="{{key}}" class="map-item {{modifier}}">
+              <li data-id="{{key}}" class="map-item">
                 <p class="flush-bottom map-item-title">{{ location.title }}</p>
                 <p class="small flush-bottom">{{ location.street }}</p>
                 <p class="small flush-bottom">{{ location.city }}, {{ location.state }}, {{ location.zip }}</p>
