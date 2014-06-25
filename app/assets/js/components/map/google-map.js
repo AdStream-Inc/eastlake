@@ -49,7 +49,7 @@ var EastlakeMap = (function(document, window, undefined) {
                 return callback();
             });
         }
-    }
+    };
 
     // our public api / facade
     return {

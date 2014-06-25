@@ -1,5 +1,5 @@
 .footer-container {
-  padding: 40px;
+  padding: 40px 0;
   background: #000;
   color: #fff;
 
@@ -26,10 +26,26 @@
   }
 }
 
+.copyright {
+  padding: 5px 0;
+  margin-bottom: 0;
+  display: block;
+  text-align: center;
+}
+
 .footer-nav {
+  display: block;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+
   & > li {
     display: inline-block;
-    float: left;
+  }
+
+  & > li.footer-nav-block {
+    display: block;
+    margin-top: 10px;
   }
 
   & > li > a {
@@ -45,5 +61,39 @@
 
   & > li > a.btn-outline {
     margin-left: 10px;
+  }
+}
+
+.get-in-touch {
+  text-align: center;
+}
+
+.franchise {
+  text-align: center;
+  display: block;
+}
+
+@media (min-width: 550px) {
+  .get-in-touch {
+    float: left;
+  }
+
+  .franchise {
+    float: right;
+  }
+}
+
+@media (min-width: 992px) {
+  .copyright {
+    float: left;
+  }
+
+  .footer-nav {
+    float: right;
+
+    & > li.footer-nav-block {
+      margin-top: 0;
+      display: inline-block;
+    }
   }
 }

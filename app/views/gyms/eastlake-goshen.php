@@ -3,9 +3,15 @@
 {% block title %}{{ title }}{% endblock %}
 
 {% block main %}
+  <ol class="breadcrumb">
+    <li><a href="{{ root }}">Home</a></li>
+    <li><a href="{{ root }}locations">All Locations</a></li>
+    <li class="active">{{ title }}</li>
+  </ol>
   <h1 class="section-title">{{ title }}</h1>
   <div class="row">
     <div class="col-md-8">
+      <img class="img-thumbnail" src="{{ root }}images/gyms/gym-goshen.png" />
       <h3 class="section-sub-title">Staffed Hours</h3>
       <table class="table">
         <thead>
@@ -54,17 +60,21 @@
         <p class="flush-bottom small">{{ location['phone'] }}</p>
         <p class="flush-bottom small">{{ location['street'] }}</p>
         <p class="small">{{ location['city'] }}, {{ location['state'] }} {{ location['zip'] }}</p>
-        <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
-        <div style="width:320px;color:#555" class="push-bottom">
-          <div style="overflow:hidden;height:240px;width:320px;">
-            <div id="gmap_canvas" style="height:240px;width:320px;"></div>
-            <style>#gmap_canvas img{max-width:none!important;background:none!important}</style>
-          </div>
-          <script type="text/javascript"> function init_map(){var myOptions = {zoom:16,center:new google.maps.LatLng(41.572844,-85.81538499999999),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById("gmap_canvas"), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(41.572844, -85.81538499999999)});infowindow = new google.maps.InfoWindow({content:"<b>Eastlake Athletic Club - Goshen</b><br/>1400 Fairfield Ave.<br/>46526 Elkhart" });google.maps.event.addListener(marker, "click", function(){infowindow.open(map,marker);});}google.maps.event.addDomListener(window, 'load', init_map);</script>
+        <div class="responsive-map-container push-bottom">
+          <div id="map-container"></div>
         </div>
         <h3 class="section-sub-title">Resources</h3>
         <a href="#" class="btn btn-primary btn-block">Group Fitness Schedule</a>
       </div>
     </div>
   </div>
+{% endblock %}
+
+{% block scripts %}
+  <script src="//maps.googleapis.com/maps/api/js?sensor=false"></script>
+  <script src="{{ root }}js/components/location-map.js"></script>
+  <script>
+    {% set mapAddress = location['street'] ~ ', ' ~ location['city'] ~ ', ' ~ location['state'] %}
+    new LocationMap('{{ mapAddress }}')
+  </script>
 {% endblock %}

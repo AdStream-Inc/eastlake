@@ -15,7 +15,7 @@
       <script>
         var URL = {
           root: '{{root}}'
-        }
+        };
       </script>
   </head>
   <body>
@@ -30,7 +30,7 @@
           </button>
           <a class="navbar-brand" href="{{ root }}">
             <img class="logo-icon" src="{{ root }}images/logo.png" />
-            <!-- <img class="logo-text" src="{{ root }}images/logo-text.png" /> -->
+            <img class="logo-text" src="{{ root }}images/logo-text.png" />
           </a>
         </div>
         <div class="collapse navbar-collapse" id="main-nav-collapse">
@@ -76,24 +76,24 @@
     <div class="footer-container">
       <div class="container">
         <div class="clearfix">
-          <p class="pull-left">
+          <p class="get-in-touch">
             Get In <strong>Touch</strong>
             <a href="https://www.facebook.com/EastlakeAthleticClub" class="fa fa-facebook footer-social"></a>
             <a href="https://twitter.com/EastlakeAthClub" class="fa fa-twitter footer-social"></a>
             <a href="http://www.youtube.com/user/EastlakeAthleticClub" class="fa fa-youtube-play footer-social"></a>
           </p>
-          <a href="{{ root }}franchise" class="franchise pull-right">Find out about our franchising opportunities</a>
+          <a href="{{ root }}franchise" class="franchise">Find out about our franchising opportunities</a>
         </div>
         <hr />
-        <p class="pull-left">&copy; Copyright <?php echo date('Y'); ?> Eastlake Athletic Clubs</p>
-        <ul class="footer-nav nav-inline pull-right">
+        <p class="copyright">&copy; Copyright {{ 'now'|date('Y', 'America/Indiana/Indianapolis') }} Eastlake Athletic Clubs</p>
+        <ul class="footer-nav nav-inline">
           <li><a href="{{ root }}">Home</a></li>
           <li><a href="{{ root }}about">About</a></li>
           <li><a href="{{ root }}membership">Membership</a></li>
           <li><a href="{{ root }}sports/tennis">Sports</a></li>
           <li><a href="{{ root }}services/group-fitness">Services</a></li>
           <li><a href="{{ root }}contact">Contact</a></li>
-          <li><a href="{{ root }}locations" class="btn-outline">Find A Club</a></li>
+          <li class="footer-nav-block"><a href="{{ root }}locations" class="btn-outline">Find A Club</a></li>
         </ul>
       </div>
     </div>

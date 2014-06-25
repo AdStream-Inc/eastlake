@@ -1,1 +1,70 @@
-var mapStyle=[{featureType:"all",stylers:[{saturation:-100},{gamma:.5}]}],EastlakeMap=function(e){var o={infobox:new google.maps.InfoWindow({maxWidth:320}),initializeMap:function(){return this.map=new google.maps.Map(e.getElementById("map-element"),{styles:mapStyle,zoom:16,center:new google.maps.LatLng(41.572844,-85.81538499999999)}),this.map},geocoder:new google.maps.Geocoder,generateMarker:function(e,o){var n=this;return new google.maps.Marker({position:new google.maps.LatLng(e,o),map:n.map})},onMouseover:function(e){var o=this;return google.maps.event.addListener(e,"mouseover",function(){o.infobox.setContent("<h3>"+e.title+"</h3>"),o.infobox.open(o.map,e)})},onMouseout:function(e){var o=this;return google.maps.event.addListener(e,"mouseout",function(){o.infobox.close()})},onClick:function(e,o){var n=this;google.maps.event.addListener(e,"click",function(){return n.map.panTo(e.getPosition()),o()})}};return{init:function(){return this.map=o.initializeMap(),this.infobox=o.infobox,this},marker:function(e,n){return o.generateMarker(e,n)},geocoder:o.geocoder,mouseover:o.onMouseover,mouseout:o.onMouseout,clicked:o.onClick}}(document,window);
+var mapStyle = [{
+    "featureType": "all",
+    "stylers": [{
+        "saturation": -100
+    }, {
+        "gamma": 0.5
+    }]
+}];
+
+var EastlakeMap = (function(document, window, undefined) {
+    var privateVars = {
+        infobox: new google.maps.InfoWindow({
+            maxWidth: 320
+        }),
+        initializeMap: function() {
+            this.map = new google.maps.Map(document.getElementById('map-element'), {
+                styles: mapStyle,
+                zoom: 16,
+                center: new google.maps.LatLng(41.572844, -85.81538499999999),
+            });
+
+            return this.map;
+        },
+        geocoder: new google.maps.Geocoder(),
+        generateMarker: function(lat, lng) {
+            var self = this;
+            return new google.maps.Marker({
+                position: new google.maps.LatLng(lat, lng),
+                map: self.map
+            });
+        },
+        onMouseover: function(marker) {
+            var self = this;
+            return google.maps.event.addListener(marker, 'mouseover', function() {
+                self.infobox.setContent('<h3>' + marker.title + '</h3>');
+                self.infobox.open(self.map, marker);
+            });
+        },
+        onMouseout: function(marker) {
+            var self = this;
+            return google.maps.event.addListener(marker, 'mouseout', function() {
+                self.infobox.close();
+            });
+        },
+        onClick: function(marker, callback) {
+            var self = this;
+            google.maps.event.addListener(marker, 'click', function() {
+                self.map.panTo(marker.getPosition());
+                return callback();
+            });
+        }
+    };
+
+    // our public api / facade
+    return {
+        init: function() {
+            this.map = privateVars.initializeMap();
+            this.infobox = privateVars.infobox;
+
+            return this;
+        },
+        marker: function(lat, lng) {
+            return privateVars.generateMarker(lat, lng);
+        },
+        geocoder: privateVars.geocoder,
+        mouseover: privateVars.onMouseover,
+        mouseout: privateVars.onMouseout,
+        clicked: privateVars.onClick
+    }
+})(document, window);

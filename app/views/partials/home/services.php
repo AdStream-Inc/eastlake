@@ -13,19 +13,19 @@
     </a>
   </div>
   <div class="col-md-4 col-sm-4 col-xs-6">
-    <a href="#" class="callout">
+    <a target="_blank" href="http://silversneakers.com/" class="callout">
       <img class="callout-img" src="images/homepage/silver-sneakers-callout.png">
       <p class="callout-title">Silver Sneakers <span class="pull-right fa fa-chevron-right callout-arrow"></span></p>
     </a>
   </div>
   <div class="col-md-4 col-sm-4 col-xs-6">
-    <a href="#" class="callout">
+    <a href="{{ root }}services/facility-rental" class="callout">
       <img class="callout-img" src="images/homepage/facility-rental-callout.png">
       <p class="callout-title">Facility Rental <span class="pull-right fa fa-chevron-right callout-arrow"></span></p>
     </a>
   </div>
   <div class="col-md-4 col-sm-4 col-xs-6">
-    <a href="#" class="callout">
+    <a href="{{ root }}services/fitness-training" class="callout">
       <img class="callout-img" src="images/homepage/fitness-training-callout.png">
       <p class="callout-title">Fitness Training <span class="pull-right fa fa-chevron-right callout-arrow"></span></p>
     </a>
