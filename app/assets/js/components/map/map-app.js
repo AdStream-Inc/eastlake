@@ -21,6 +21,8 @@
     this.initLocations();
     this.watchLocations();
 
+    $('.map-item').eq(0).addClass('active');
+
     $(window).on('resize', this.resizeMap);
   };
 
