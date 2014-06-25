@@ -160,50 +160,62 @@ $app->group('/locations', function() use($app, $locations) {
     );
   });
 
-  $app->get('/eastlake-nappanee', function() use($app) {
+  $app->get('/eastlake-nappanee', function() use($app, $locations) {
+    $location = $locations['eastlake-nappanee'];
     $app->render('gyms/eastlake-nappanee.php',
       array(
-        'title' => 'Eastlake 24 Nappanee'
+        'title' => 'Eastlake 24 Nappanee',
+        'location' => $location
       )
     );
   });
 
-  $app->get('/eastlake-syracuse', function() use($app) {
+  $app->get('/eastlake-syracuse', function() use($app, $locations) {
+    $location = $locations['eastlake-syracuse'];
     $app->render('gyms/eastlake-syracuse.php',
       array(
-        'title' => 'Eastlake 24 Syracuse'
+        'title' => 'Eastlake 24 Syracuse',
+        'location' => $location
       )
     );
   });
 
-  $app->get('/eastlake-middlebury', function() use($app) {
+  $app->get('/eastlake-middlebury', function() use($app, $locations) {
+    $location = $locations['eastlake-middlebury'];
     $app->render('gyms/eastlake-middlebury.php',
       array(
-        'title' => 'Eastlake 24 Middlebury'
+        'title' => 'Eastlake 24 Middlebury',
+        'location' => $location
       )
     );
   });
 
-  $app->get('/eastlake-northpointe', function() use($app) {
+  $app->get('/eastlake-northpointe', function() use($app, $locations) {
+    $location = $locations['eastlake-northpointe'];
     $app->render('gyms/eastlake-northpointe.php',
       array(
-        'title' => 'Eastlake 24 Northpointe'
+        'title' => 'Eastlake 24 Northpointe',
+        'location' => $location
       )
     );
   });
 
-  $app->get('/eastlake-17', function() use($app) {
+  $app->get('/eastlake-17', function() use($app, $locations) {
+    $location = $locations['eastlake-17'];
     $app->render('gyms/eastlake-17.php',
       array(
-        'title' => 'Eastlake 24 CR 17'
+        'title' => 'Eastlake 24 CR 17',
+        'location' => $location
       )
     );
   });
 
-  $app->get('/eastlake-elkhart', function() use($app) {
+  $app->get('/eastlake-elkhart', function() use($app, $locations) {
+    $location = $locations['eastlake-elkhart'];
     $app->render('gyms/eastlake-elkhart.php',
       array(
-        'title' => 'Eastlake Athletic Club - Elkhart'
+        'title' => 'Eastlake Athletic Club - Elkhart',
+        'location' => $location
       )
     );
   });

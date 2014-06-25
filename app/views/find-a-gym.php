@@ -34,6 +34,5 @@
 
 {% block scripts %}
   <script src="//maps.googleapis.com/maps/api/js?sensor=false"></script>
-  <script src="{{ root }}js/components/google-map.js"></script>
   <script src="{{ root }}js/components/map-app.js"></script>
 {% endblock %}
