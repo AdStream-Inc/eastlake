@@ -40,7 +40,6 @@
     var sidebar = $('.map-sidebar-container');
     var windowWidth = $(window).width();
 
-    console.log(windowWidth);
     if (windowWidth >= 977) { // this is weird...
       sidebar.height(containerHeight);
     } else {

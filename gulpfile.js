@@ -31,7 +31,7 @@ gulp.task('jsShared', function() {
 
 gulp.task('jsComponent', function() {
   gulp.src(jsComponentPath)
-    // .pipe(uglify())
+    .pipe(uglify())
     .pipe(gulp.dest('./public/js/components/'));
 })
 
