@@ -1,8 +1,9 @@
 {
     "require": {
-        "slim/slim": "2.*",
-        "slim/views": "0.1.*",
-        "twig/twig": "*",
-        "entomb/slim-json-api": "dev-master"
+        "slim/slim": "dev-master",
+        "slim/views": "dev-master",
+        "twig/twig": "dev-master",
+        "entomb/slim-json-api": "dev-master",
+        "swiftmailer/swiftmailer": "5.2.*@dev"
     }
 }

@@ -16,6 +16,65 @@ $app->get('/about', function() use($app) {
   );
 });
 
+$app->get('/contact', function() use($app) {
+  $app->render('contact.php',
+    array(
+      'title' => 'Contact',
+    )
+  );
+});
+
+$app->post('/contact', function() use ($app) {
+  date_default_timezone_set('America/Indiana/Indianapolis');
+
+  $view = $app->view();
+
+  $transport = Swift_SmtpTransport::newInstance('smtp.mandrillapp.com', 587)
+    ->setUsername('john@stratashops.com')
+    ->setPassword('JW5kUt8BRBPZoz4yjxgsTA');
+
+  $mailer = Swift_Mailer::newInstance($transport);
+
+  $html = $view->render('emails/contact-form.php',
+    array(
+      'title' => 'Contact',
+      'name' => $_POST['name'],
+      'email' => $_POST['email'],
+      'phone' => $_POST['phone'],
+      'message' => $_POST['message'],
+      'interest' => $_POST['interest']
+    )
+  );
+
+  $message = Swift_Message::newInstance();
+  $message
+    ->setSubject($_POST['name'] . ' - Eastlake Contact Form')
+    ->setFrom($_POST['email'])
+    ->setTo('brandon@adstreaminc.com')
+    ->setBody($html, 'text/html');
+
+  $mailer->send($message);
+
+  $app->redirect('thanks');
+
+});
+
+$app->get('/thanks', function() use($app) {
+  $app->render('thanks.php',
+    array(
+      'title' => 'Thanks',
+    )
+  );
+});
+
+$app->get('/test', function() use ($app) {
+  $app->render('emails/contact-form.php',
+    array(
+      'title' => 'Contact'
+    )
+  );
+});
+
 $app->get('/franchise', function() use($app) {
   $app->render('franchise.php',
     array(

@@ -7,8 +7,8 @@
       <meta name="description" content="{% block description %}{% endblock %}">
       <meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1">
 
-      <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.1.1/css/bootstrap.min.css" />
-      <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.min.css" />
+      <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+      <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css">
       <link rel="stylesheet" href="{{ root }}css/app.min.css">
       {% block stylesheets %}{% endblock %}
 
@@ -61,7 +61,7 @@
                 <li><a href="{{ root }}services/strength-and-conditioning">Strength &amp; Conditioning</a></li>
               </ul>
             </li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="{{ root }}contact" {% if (uri == '/contact') %} class="active" {% endif %}>Contact</a></li>
             <li><a href="{{ root }}locations" class="btn-outline">Find a Club</a></li>
           </ul>
         </div>
@@ -85,19 +85,24 @@
           <a href="{{ root }}franchise" class="franchise">Find out about our franchising opportunities</a>
         </div>
         <hr />
-        <p class="copyright">&copy; Copyright {{ 'now'|date('Y', 'America/Indiana/Indianapolis') }} Eastlake Athletic Clubs</p>
-        <ul class="footer-nav nav-inline">
-          <li><a href="{{ root }}">Home</a></li>
-          <li><a href="{{ root }}about">About</a></li>
-          <li><a href="{{ root }}membership">Membership</a></li>
-          <li><a href="{{ root }}sports/tennis">Sports</a></li>
-          <li><a href="{{ root }}services/group-fitness">Services</a></li>
-          <li><a href="{{ root }}contact">Contact</a></li>
-          <li class="footer-nav-block"><a href="{{ root }}locations" class="btn-outline">Find A Club</a></li>
-        </ul>
+        <div class="clearfix">
+          <p class="copyright">&copy; Copyright {{ 'now'|date('Y', 'America/Indiana/Indianapolis') }} Eastlake Athletic Clubs</p>
+          <ul class="footer-nav nav-inline">
+            <li><a href="{{ root }}">Home</a></li>
+            <li><a href="{{ root }}about">About</a></li>
+            <li><a href="{{ root }}membership">Membership</a></li>
+            <li><a href="{{ root }}sports/tennis">Sports</a></li>
+            <li><a href="{{ root }}services/group-fitness">Services</a></li>
+            <li><a href="{{ root }}contact">Contact</a></li>
+            <li class="footer-nav-block"><a href="{{ root }}locations" class="btn-outline">Find A Club</a></li>
+          </ul>
+        </div>
+        <div class="clearfix">
+         <p class="flush-bottom small text-muted">Website by <a target="_blank" href="http://www.adstreaminc.com/">Ad Stream Inc</a></p>
+        </div>
       </div>
     </div>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.1.1/js/bootstrap.min.js"></script>
     <script src="{{root}}js/app.min.js"></script>
     {% block scripts %}{% endblock %}

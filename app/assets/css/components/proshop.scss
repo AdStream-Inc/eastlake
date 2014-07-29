@@ -1,0 +1,33 @@
+.shop-img-container {
+  padding: 4px;
+  background: #000;
+  transition: background .3s ease;
+  display: block;
+
+  &:hover {
+    background: $yellow;
+  }
+}
+
+.pro-shop-slider {
+  padding-bottom: 40px;
+
+  .owl-next,
+  .owl-prev {
+    background: $yellow;
+    color: #000;
+    position: absolute;
+    bottom: 0;
+    line-height: 1;
+    display: block;
+    padding: 5px 15px;
+  }
+
+  .owl-prev {
+    left: 0;
+  }
+
+  .owl-next {
+    right: 0;
+  }
+}

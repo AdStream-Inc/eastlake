@@ -6,8 +6,8 @@ var rename = require('gulp-rename');
 var imagemin = require('gulp-imagemin');
 var concat = require('gulp-concat');
 
-var cssPath = ['./app/assets/css/*.scss', './app/assets/css/**/*.scss'];
-var jsSharedPath = ['./app/assets/js/shared/*.js'];
+var cssPath = ['./app/assets/css/app.scss'];
+var jsSharedPath = ['./app/assets/js/lib/*.js', './app/assets/js/shared/*.js'];
 var jsComponentPath = ['./app/assets/js/components/map/*.js'];
 var imagePath = ['./public/images/**'];
 
@@ -42,7 +42,7 @@ gulp.task('images', function() {
 });
 
 gulp.task('watch', function() {
-  gulp.watch(cssPath, ['sass']);
+  gulp.watch(['./app/assets/css/app.scss', './app/assets/css/**/*.scss'], ['sass']);
   gulp.watch(jsSharedPath, ['jsShared']);
   gulp.watch(jsComponentPath, ['jsComponent']);
 });

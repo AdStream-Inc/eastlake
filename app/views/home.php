@@ -12,20 +12,24 @@
         <a href="{{ root }}locations" class="btn-outline btn btn-lg shake">Find A Club</a>
       </div>
       <div class="hero-img pull-right fadeInRight">
-        <img src="images/homepage/home-hero.png" />
+        <div class="hero-img-slider">
+          <img class="item" src="images/homepage/rates-hero.png" alt="Personal and Corporate Rates" data-title="Personal and Corporate Rates" />
+          <img class="item" src="images/homepage/tennis-hero.png" alt="Elite Tennis Programs" data-title="Elite Tennis Programs" />
+          <img class="item" src="images/homepage/silver-sneakers-hero.png" alt="Silver Sneakers Program" data-title="Silver Sneakers Program" />
+        </div>
+      </div>
+      <div class="hero-caption fadeInRight">
+        Personal and Corporate Rates
       </div>
     </div>
   </div>
 {% endblock %}
 
 {% block main %}
-  <div class="sports-section">
-    {% include 'partials/home/sports.php' %}
-  </div>
   <div class="row">
     <div class="col-md-6">
-      <div class="services-section">
-        {% include 'partials/home/services.php' %}
+      <div class="sports-section">
+        {% include 'partials/home/sports.php' %}
       </div>
     </div>
     <div class="col-md-6">
