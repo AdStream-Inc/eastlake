@@ -50,7 +50,7 @@ $app->post('/contact', function() use ($app) {
   $message
     ->setSubject($_POST['name'] . ' - Eastlake Contact Form')
     ->setFrom($_POST['email'])
-    ->setTo('brandon@adstreaminc.com')
+    ->setTo('stephanieravenscroft@gmail.com')
     ->setBody($html, 'text/html');
 
   $mailer->send($message);
