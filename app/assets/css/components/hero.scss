@@ -10,8 +10,6 @@
 
 .hero-img {
   animation-delay: 300ms;
-  max-width: 700px;
-
   img{
     max-width: 100%;
     width: auto;
@@ -27,6 +25,7 @@
   background: rgba(0,0,0,.3);
   font-size: 20px;
   padding: 10px 20px;
+  display: none;
 }
 
 .hero-callout {
@@ -67,6 +66,14 @@
   .hero-inner {
     max-height: 100%;
     overflow: inherit;
+  }
+
+  .hero-caption {
+    display: block;
+  }
+
+  .hero-img {
+    max-width: 700px;
   }
 
   .hero-callout {

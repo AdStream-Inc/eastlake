@@ -4,8 +4,8 @@
     animateOut: 'fadeOut',
     autoplay: true,
     mouseDrag: false,
-    loop: true,
-    autoHeight: true
+    touchDrag: false,
+    loop: true
   });
 
   heroSlider.on('translate.owl.carousel', function() {
