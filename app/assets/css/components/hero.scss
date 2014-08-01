@@ -10,6 +10,7 @@
 
 .hero-img {
   animation-delay: 300ms;
+  width: 100%;
   img{
     max-width: 100%;
     width: auto;
@@ -21,11 +22,12 @@
   position: absolute;
   bottom: 0;
   right: 0;
+  left: 0;
+  text-align: center;
   color: #fff;
   background: rgba(0,0,0,.3);
-  font-size: 20px;
+  font-size: 12px;
   padding: 10px 20px;
-  display: none;
 }
 
 .hero-callout {
@@ -69,11 +71,12 @@
   }
 
   .hero-caption {
-    display: block;
+    font-size: 20px;
+    left: auto;
   }
 
   .hero-img {
-    max-width: 700px;
+    width: 700px;
   }
 
   .hero-callout {

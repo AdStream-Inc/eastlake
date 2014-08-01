@@ -5,7 +5,8 @@
     autoplay: true,
     mouseDrag: false,
     touchDrag: false,
-    loop: true
+    loop: true,
+    autoHeight: true
   });
 
   heroSlider.on('translate.owl.carousel', function() {
