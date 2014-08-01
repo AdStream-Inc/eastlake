@@ -31,6 +31,29 @@
           </tr>
         </tbody>
       </table>
+      <h3 class="section-sub-title">Nursery Hours</h3>
+      <table class="table">
+        <thead>
+          <tr>
+            <th>Day</th>
+            <th class="text-right">Hours</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Tuesday</td>
+            <td class="text-right">4 PM - 7 PM</td>
+          </tr>
+          <tr>
+            <td>Wednesday</td>
+            <td class="text-right">4:45 PM - 7 PM</td>
+          </tr>
+          <tr>
+            <td>Thursday</td>
+            <td class="text-right">4 PM - 7 PM</td>
+          </tr>
+        </tbody>
+      </table>
       <h3 class="section-sub-title">Amenities</h3>
       <ul class="list-group eastlake-list-group">
         <li class="list-group-item">Paramount Strength</li>
@@ -51,7 +74,7 @@
           <div id="map-container"></div>
         </div>
         <h3 class="section-sub-title">Resources</h3>
-        <a href="#" class="btn btn-primary btn-block">Group Fitness Schedule</a>
+        <a href="{{root}}uploads/august-september.pdf" target="_blank" class="btn btn-primary btn-block">Group Fitness Schedule</a>
       </div>
     </div>
   </div>

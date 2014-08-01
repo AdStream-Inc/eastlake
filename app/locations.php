@@ -1,15 +1,6 @@
 <?php
 
 return array(
-  'eastlake-goshen' => array(
-    'title' => 'Eastlake Athletic Club Goshen',
-    'route' => 'eastlake-goshen',
-    'street' => '1400 Fairfield Ave.',
-    'city' => 'Goshen',
-    'state' => 'IN',
-    'zip' => '46526',
-    'phone' => '574-533-2498',
-  ),
   'eastlake-elkhart' => array(
     'title' => 'Eastlake Athletic Club Elkhart',
     'route' => 'eastlake-elkhart',
@@ -18,6 +9,15 @@ return array(
     'state' => 'IN',
     'zip' => '46514',
     'phone' => '574-264-0611',
+  ),
+  'eastlake-goshen' => array(
+    'title' => 'Eastlake Athletic Club Goshen',
+    'route' => 'eastlake-goshen',
+    'street' => '1400 Fairfield Ave.',
+    'city' => 'Goshen',
+    'state' => 'IN',
+    'zip' => '46526',
+    'phone' => '574-533-2498',
   ),
   'eastlake-17' => array(
     'title' => 'Eastlake 24 Elkhart CR 17',

@@ -4,6 +4,8 @@
 
 .hero-inner {
   position: relative;
+  max-height: 320px;
+  overflow: hidden;
 }
 
 .hero-img {
@@ -24,7 +26,7 @@
   color: #fff;
   background: rgba(0,0,0,.3);
   font-size: 20px;
-  padding: 20px;
+  padding: 10px 20px;
 }
 
 .hero-callout {
@@ -62,6 +64,11 @@
 }
 
 @media (min-width: 481px) {
+  .hero-inner {
+    max-height: 100%;
+    overflow: inherit;
+  }
+
   .hero-callout {
     top: 50%;
     margin-top: -151px;

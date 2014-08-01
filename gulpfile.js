@@ -7,7 +7,7 @@ var imagemin = require('gulp-imagemin');
 var concat = require('gulp-concat');
 
 var cssPath = ['./app/assets/css/app.scss'];
-var jsSharedPath = ['./app/assets/js/lib/*.js', './app/assets/js/shared/*.js'];
+var jsSharedPath = ['./app/assets/js/jquery.js', './app/assets/js/lib/*.js', './app/assets/js/shared/*.js'];
 var jsComponentPath = ['./app/assets/js/components/map/*.js'];
 var imagePath = ['./public/images/**'];
 

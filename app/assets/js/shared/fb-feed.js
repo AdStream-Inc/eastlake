@@ -19,7 +19,7 @@
       var html = '';
       $.each(res.data, function() {
         html += '<div class="fb-message">';
-        html += '<p class="fb-message-body">' + this.message + '</p>'
+        html += '<p class="fb-message-body">' + this.message + '</p>';
         html += '<p class="fb-message-date small text-muted">' + relativeTime(this.created_time) +'</p>';
         html += '</div>';
       });
@@ -28,7 +28,7 @@
     });
   };
 
-  new EastlakeFeed();
+  window.EastlakeFeed = EastlakeFeed;
 
   // Adapted from James Herdman's http://bit.ly/e5Jnxe
   function relativeTime(time) {

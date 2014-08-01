@@ -7,7 +7,6 @@
       <meta name="description" content="{% block description %}{% endblock %}">
       <meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1">
 
-      <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
       <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css">
       <link rel="stylesheet" href="{{ root }}css/app.min.css">
       {% block stylesheets %}{% endblock %}
@@ -52,7 +51,7 @@
               <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="0">Services <b class="caret"></b></a>
               <ul class="dropdown-menu">
                 <li><a href="{{ root }}services/group-fitness">Group Fitness</a></li>
-                <li><a href="{{ root }}services/message">Message</a></li>
+                <li><a href="{{ root }}services/massage">Massage</a></li>
                 <li><a target="_blank" href="http://silversneakers.com">Silver Sneakers</a></li>
                 <li><a href="{{ root }}services/facility-rental">Facility Rental</a></li>
                 <li><a href="{{ root }}services/fitness-training">Fitness Training</a></li>
@@ -98,12 +97,11 @@
           </ul>
         </div>
         <div class="clearfix">
-         <p class="flush-bottom small text-muted">Website by <a target="_blank" href="http://www.adstreaminc.com/">Ad Stream Inc</a></p>
+         <p class="flush-bottom small text-muted adstream">Website by <a target="_blank" href="http://www.adstreaminc.com/">Ad Stream Inc</a></p>
         </div>
       </div>
     </div>
     <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.1.1/js/bootstrap.min.js"></script>
     <script src="{{root}}js/app.min.js"></script>
     {% block scripts %}{% endblock %}
   </body>

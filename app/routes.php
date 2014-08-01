@@ -134,10 +134,10 @@ $app->group('/services', function() use($app) {
     );
   });
 
-  $app->get('/message', function() use($app) {
+  $app->get('/massage', function() use($app) {
     $app->render('services/message.php',
       array(
-        'title' => 'Message'
+        'title' => 'Massage'
       )
     );
   });

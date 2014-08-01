@@ -31,7 +31,7 @@
 
     _this.map = new google.maps.Map(document.getElementById('map-element'), {
       zoom: 16,
-      center: new google.maps.LatLng(41.572844, -85.81538499999999),
+      center: new google.maps.LatLng(41.716987, -85.941151),
       styles: mapStyle
     });
   };

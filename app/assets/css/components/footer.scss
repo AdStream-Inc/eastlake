@@ -73,6 +73,11 @@
   display: block;
 }
 
+.adstream {
+  text-align: center;
+  margin-top: 20px;
+}
+
 @media (min-width: 550px) {
   .get-in-touch {
     float: left;
@@ -86,6 +91,11 @@
 @media (min-width: 992px) {
   .copyright {
     float: left;
+  }
+
+  .adstream {
+    text-align: left;
+    margin-top: 0;
   }
 
   .footer-nav {
