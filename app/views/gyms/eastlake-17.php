@@ -11,7 +11,18 @@
   <h1 class="section-title">{{ title }}</h1>
   <div class="row">
     <div class="col-md-8">
-      <img class="img-thumbnail" src="{{ root }}images/gyms/gym-17.png" />
+      <img class="img-thumbnail push-bottom" src="{{ root }}images/gyms/gym-17.png" />
+      <div class="row push-bottom">
+        <div class="col-sm-4">
+          <img class="img-thumbnail" src="{{ root }}images/gyms/17/1-thumb.png" />
+        </div>
+        <div class="col-sm-4">
+          <img class="img-thumbnail" src="{{ root }}images/gyms/17/2-thumb.png" />
+        </div>
+        <div class="col-sm-4">
+          <img class="img-thumbnail" src="{{ root }}images/gyms/17/3-thumb.png" />
+        </div>
+      </div>
       <h3 class="section-sub-title">Staffed Hours</h3>
       <table class="table">
         <thead>

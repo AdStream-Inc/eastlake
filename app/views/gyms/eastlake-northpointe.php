@@ -11,7 +11,18 @@
   <h1 class="section-title">{{ title }}</h1>
   <div class="row">
     <div class="col-md-8">
-      <img class="img-thumbnail" src="{{ root }}images/gyms/gym-northpointe.png" />
+      <img class="img-thumbnail push-bottom" src="{{ root }}images/gyms/gym-northpointe.png" />
+      <div class="row push-bottom">
+        <div class="col-xs-4">
+          <a class="gallery-item" href="{{ root }}images/gyms/northpointe/2.jpg"><img class="img-thumbnail" src="{{ root }}images/gyms/northpointe/2-thumb.png" /></a>
+        </div>
+        <div class="col-xs-4">
+          <a class="gallery-item" href="{{ root }}images/gyms/northpointe/3.jpg"><img class="img-thumbnail" src="{{ root }}images/gyms/northpointe/3-thumb.png" /></a>
+        </div>
+        <div class="col-xs-4">
+          <a class="gallery-item" href="{{ root }}images/gyms/northpointe/4.jpg"><img class="img-thumbnail" src="{{ root }}images/gyms/northpointe/4-thumb.png" /></a>
+        </div>
+      </div>
       <h3 class="section-sub-title">Staffed Hours</h3>
       <table class="table">
         <thead>

@@ -11,7 +11,18 @@
   <h1 class="section-title">{{ title }}</h1>
   <div class="row">
     <div class="col-md-8">
-      <img class="img-thumbnail" src="{{ root }}images/gyms/gym-middlebury.png" />
+      <img class="img-thumbnail push-bottom" src="{{ root }}images/gyms/gym-middlebury.png" />
+      <div class="row push-bottom">
+        <div class="col-xs-4">
+          <a class="gallery-item" href="{{ root }}images/gyms/middlebury/1.jpg"><img class="img-thumbnail" src="{{ root }}images/gyms/middlebury/1-thumb.png" /></a>
+        </div>
+        <div class="col-xs-4">
+          <a class="gallery-item" href="{{ root }}images/gyms/middlebury/2.jpg"><img class="img-thumbnail" src="{{ root }}images/gyms/middlebury/2-thumb.png" /></a>
+        </div>
+        <div class="col-xs-4">
+          <a class="gallery-item" href="{{ root }}images/gyms/middlebury/3.jpg"><img class="img-thumbnail" src="{{ root }}images/gyms/middlebury/3-thumb.png" /></a>
+        </div>
+      </div>
       <h3 class="section-sub-title">Staffed Hours</h3>
       <table class="table">
         <thead>
