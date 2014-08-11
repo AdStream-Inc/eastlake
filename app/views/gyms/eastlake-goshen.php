@@ -83,7 +83,7 @@
         <li class="list-group-item">Soccer Field</li>
         <li class="list-group-item">Silver Sneakers Access</li>
         <li class="list-group-item">Racquetball Courts</li>
-        <li class="list-group-item">Message</li>
+        <li class="list-group-item">Massage</li>
         <li class="list-group-item">Towel Service</li>
         <li class="list-group-item">Nursery</li>
       </ul>

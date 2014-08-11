@@ -41,9 +41,9 @@
               <ul class="dropdown-menu">
                 <li><a href="{{ root }}sports/tennis">Tennis</a></li>
                 <li><a href="{{ root }}sports/racquetball">Racquetball</a></li>
-                <li><a href="{{ root }}sports/football">Football</a></li>
+                <li><a href="{{ root }}sports/jiu-jitsu">Jiu Jitsu</a></li>
                 <li><a href="{{ root }}sports/soccer">Soccer</a></li>
-                <li><a href="http://ecbsa.lockerdome.com/">Baseball</a></li>
+                <li><a href="http://www.chargersacademy.com ">Baseball</a></li>
                 <li><a href="http://www.hoosierpremier.com/">Basketball</a></li>
               </ul>
             </li>
@@ -56,7 +56,6 @@
                 <li><a href="{{ root }}services/facility-rental">Facility Rental</a></li>
                 <li><a href="{{ root }}services/fitness-training">Fitness Training</a></li>
                 <li><a href="{{ root }}services/child-care">Child Care</a></li>
-                <li><a href="{{ root }}services/brazilian-jiu-jitsu">Brazilian Jiu Jitsu</a></li>
                 <li><a href="{{ root }}services/strength-and-conditioning">Strength &amp; Conditioning</a></li>
               </ul>
             </li>

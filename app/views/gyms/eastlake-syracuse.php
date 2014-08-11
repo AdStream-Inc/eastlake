@@ -11,7 +11,18 @@
   <h1 class="section-title">{{ title }}</h1>
   <div class="row">
     <div class="col-md-8">
-      <img class="img-thumbnail" src="{{ root }}images/gyms/gym-syracuse.png" />
+      <img class="img-thumbnail push-bottom" src="{{ root }}images/gyms/gym-syracuse.png" />
+      <div class="row push-bottom">
+        <div class="col-xs-4">
+          <a class="gallery-item" href="{{ root }}images/gyms/syracuse/1.jpg"><img class="img-thumbnail" src="{{ root }}images/gyms/syracuse/1-thumbnail.png" /></a>
+        </div>
+        <div class="col-xs-4">
+          <a class="gallery-item" href="{{ root }}images/gyms/syracuse/2.jpg"><img class="img-thumbnail" src="{{ root }}images/gyms/syracuse/2-thumbnail.png" /></a>
+        </div>
+        <div class="col-xs-4">
+          <a class="gallery-item" href="{{ root }}images/gyms/syracuse/3.jpg"><img class="img-thumbnail" src="{{ root }}images/gyms/syracuse/3-thumbnail.png" /></a>
+        </div>
+      </div>
       <h3 class="section-sub-title">Staffed Hours</h3>
       <table class="table">
         <thead>

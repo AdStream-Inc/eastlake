@@ -116,10 +116,10 @@ $app->group('/sports', function() use($app) {
     );
   });
 
-  $app->get('/football', function() use($app) {
-    $app->render('sports/football.php',
+  $app->get('/jiu-jitsu', function() use($app) {
+    $app->render('services/brazilian-jiu-jitsu.php',
       array(
-        'title' => 'Football',
+        'title' => 'Jiu Jitsu',
       )
     );
   });
