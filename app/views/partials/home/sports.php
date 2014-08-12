@@ -19,7 +19,7 @@
   <div class="col-md-4 col-sm-6 col-xs-6">
     <a href="{{ root }}sports/jiu-jitsu" class="callout">
       <div class="callout-img-container">
-        <img class="callout-img img-responsive" src="images/homepage/football.png">
+        <img class="callout-img img-responsive" src="images/homepage/jiu-jitsu.png">
       </div>
       <p class="callout-title">Jiu Jitsu <span class="pull-right fa fa-chevron-right callout-arrow"></span></p>
     </a>
