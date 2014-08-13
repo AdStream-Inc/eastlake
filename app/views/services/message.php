@@ -39,9 +39,8 @@
     <div class="col-md-4">
       <div class="sidebar">
         <h3 class="section-sub-title">Prices</h3>
-        <p class="flush-bottom">30 mins - $30</p>
-        <p class="flush-bottom">1hr - $50</p>
-        <p>1.5 hrs - $75</p>
+        <p class="flush-bottom">1hr with Director - $45</p>
+        <p class="flush-bottom">1hr with Associates - $39</p>
         <p class="flush-bottom">Schedule your appointment today!</p>
       </div>
     </div>

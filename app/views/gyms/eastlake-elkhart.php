@@ -17,7 +17,7 @@
           <a class="gallery-item" href="{{ root }}images/gyms/corporate/1.jpg"><img class="img-thumbnail" src="{{ root }}images/gyms/corporate/1-thumb.png" /></a>
         </div>
         <div class="col-xs-4">
-          <a class="gallery-item" href="{{ root }}images/gyms/corporate/2.jpg"><img class="img-thumbnail" src="{{ root }}images/gyms/corporate/2-thumb.png" /></a>
+          <a class="gallery-item" href="{{ root }}images/gyms/corporate/4.jpg"><img class="img-thumbnail" src="{{ root }}images/gyms/corporate/4-thumb.png" /></a>
         </div>
         <div class="col-xs-4">
           <a class="gallery-item" href="{{ root }}images/gyms/corporate/3.jpg"><img class="img-thumbnail" src="{{ root }}images/gyms/corporate/3-thumb.png" /></a>
