@@ -14,7 +14,7 @@ use \Slim\Views\TwigExtension;
 
 $app = new Slim(array(
   'view' => new Twig(),
-  'debug' => true,
+  'debug' => false,
   'templates.path' => ROOT . '/app/views',
 ));
 
@@ -37,7 +37,7 @@ $app->view()->appendData(array('uri' => $uri, 'root' => $rootPath));
 
 $view = $app->view();
 $view->parserOptions = array(
-  'debug' => true,
+  'debug' => false,
   'cache' => ROOT . '/app/views/cache',
   'auto_reload' => true
 );
