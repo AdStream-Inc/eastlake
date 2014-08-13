@@ -21,7 +21,7 @@
 
         if (this.message) {
           html += '<div class="fb-message">';
-          html += '<p class="fb-message-body">' + this.message + '</p>';
+          html += '<p class="fb-message-body">' + this.message.substring(150)  + '...</p>';
           html += '<p class="fb-message-date small text-muted">' + relativeTime(this.created_time) +'</p>';
           html += '</div>';
         }
