@@ -60,12 +60,16 @@
         </thead>
         <tbody>
           <tr>
+            <td>Monday</td>
+            <td class="text-right">4 PM - 7 PM</td>
+          </tr>
+          <tr>
             <td>Tuesday</td>
             <td class="text-right">4 PM - 7 PM</td>
           </tr>
           <tr>
             <td>Wednesday</td>
-            <td class="text-right">4:45 PM - 7 PM</td>
+            <td class="text-right">4 PM - 7 PM</td>
           </tr>
           <tr>
             <td>Thursday</td>

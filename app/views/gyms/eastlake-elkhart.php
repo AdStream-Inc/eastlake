@@ -69,7 +69,7 @@
             </tr>
             <tr>
               <td>Wednesday</td>
-              <td class="text-right">8 AM - 1 PM &amp;   4:30 AM -8 PM</td>
+              <td class="text-right">8 AM - 1 PM &amp;   5:30 AM -8 PM</td>
             </tr>
             <tr>
               <td>Thursday</td>
@@ -77,7 +77,7 @@
             </tr>
             <tr>
               <td>Friday</td>
-              <td class="text-right">8 AM - 1 PM &amp;   4:30 AM -8 PM</td>
+              <td class="text-right">8 AM - 1 PM</td>
             </tr>
             <tr>
               <td>Saturday</td>
@@ -93,7 +93,7 @@
         <li class="list-group-item">Basketball Court</li>
         <li class="list-group-item">Tennis Courts</li>
         <li class="list-group-item">Baseball Cages</li>
-        <li class="list-group-item">Waling Track</li>
+        <li class="list-group-item">Walking Track</li>
         <li class="list-group-item">Lockers</li>
         <li class="list-group-item">Silver Sneakers Access</li>
         <li class="list-group-item">Massage</li>
