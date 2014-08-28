@@ -61,19 +61,19 @@
           <tbody>
             <tr>
               <td>Monday</td>
-              <td class="text-right">8 AM - 1 PM &amp;   4:30 AM -8 PM</td>
+              <td class="text-right">8 AM - 1 PM &amp;   4:30 PM -8 PM</td>
             </tr>
             <tr>
               <td>Tuesday</td>
-              <td class="text-right">8 AM - 1 PM &amp;   4:30 AM -8 PM</td>
+              <td class="text-right">8 AM - 1 PM &amp;   4:30 PM -8 PM</td>
             </tr>
             <tr>
               <td>Wednesday</td>
-              <td class="text-right">8 AM - 1 PM &amp;   5:30 AM -8 PM</td>
+              <td class="text-right">8 AM - 1 PM &amp;   5:30 PM -8 PM</td>
             </tr>
             <tr>
               <td>Thursday</td>
-              <td class="text-right">8 AM - 1 PM &amp;   4:30 AM -8 PM</td>
+              <td class="text-right">8 AM - 1 PM &amp;   4:30 PM -8 PM</td>
             </tr>
             <tr>
               <td>Friday</td>
@@ -81,7 +81,7 @@
             </tr>
             <tr>
               <td>Saturday</td>
-              <td class="text-right">8 AM - 1 PM &amp;   4:30 AM -8 PM</td>
+              <td class="text-right">9 AM - 12 PM</td>
             </tr>
           </tbody>
       </table>
