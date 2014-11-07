@@ -33,8 +33,12 @@
         </thead>
         <tbody>
           <tr>
-            <td>Monday - Friday</td>
+            <td>Monday - Wednesday - Friday</td>
             <td class="text-right">12 PM - 6 PM</td>
+          </tr>
+          <tr>
+            <td>Tuesday - Thursday</td>
+            <td class="text-right">2 PM - 8 PM</td>
           </tr>
           <tr>
             <td>24 hour access</td>
@@ -63,7 +67,7 @@
           <div id="map-container"></div>
         </div>
         <h3 class="section-sub-title">Resources</h3>
-        <a href="{{root}}uploads/august-september.pdf" target="_blank" class="btn btn-primary btn-block">Group Fitness Schedule</a>
+        <a href="{{root}}uploads/Schedule.pdf" target="_blank" class="btn btn-primary btn-block">Group Fitness Schedule</a>
       </div>
     </div>
   </div>
