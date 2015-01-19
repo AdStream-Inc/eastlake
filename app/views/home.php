@@ -26,6 +26,13 @@
 {% endblock %}
 
 {% block main %}
+  <div class="special-section">
+    <h1 class="section-title">CURRENT SPECIAL</h1>
+    <div class="store-info">
+      <img class="img-responsive hidden-xs" src="https://fbcdn-sphotos-d-a.akamaihd.net/hphotos-ak-xpa1/t31.0-8/s2048x2048/10896359_558274364309340_8912820614730807181_o.jpg" / alt="$29 Enrollment, 29$ a month. This offer will give you access to all 8 of our locations! Corporate, family and other discounts available.">
+      <p class="visible-xs">$29 Enrollment, 29$ a month. This offer will give you access to all 8 of our locations! Corporate, family and other discounts available. Stop in and ask us about our new member referral programs.</p>
+    </div>
+  </div>
   <div class="row">
     <div class="col-md-6">
       <div class="sports-section">
