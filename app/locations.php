@@ -19,6 +19,15 @@ return array(
     'zip' => '46526',
     'phone' => '574-533-2498',
   ),
+  'eastlake-granger' => array(
+    'title' => 'Eastlake 24 Granger (NEW)',
+    'route' => 'eastlake-granger',
+    'street' => '1202 East University Dr.',
+    'city' => 'Granger',
+    'state' => 'IN',
+    'zip' => '46530',
+    'phone' => '574-243-1823',
+  ),
   'eastlake-17' => array(
     'title' => 'Eastlake 24 Elkhart CR 17',
     'route' => 'eastlake-17',

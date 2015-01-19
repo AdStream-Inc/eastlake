@@ -14,7 +14,11 @@
                 <p class="small flush-bottom">{{ location.street }}</p>
                 <p class="small flush-bottom">{{ location.city }}, {{ location.state }}, {{ location.zip }}</p>
                 <p class="small">{{ location.phone }}</p>
-                <a href="{{ root }}locations/{{ location.route }}" class="btn btn-sm btn-default">More Details</a>
+                {% if key == 'eastlake-granger' %}
+                  <button type="button" class="btn btn-sm btn-default">Coming Soon</button>
+                {% else %}
+                  <a href="{{ root }}locations/{{ location.route }}" class="btn btn-sm btn-default">More Details</a>
+                {% endif %}
               </li>
             {% endfor %}
           </ul>
