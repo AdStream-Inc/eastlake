@@ -67,7 +67,7 @@ return array(
   'eastlake-nappanee' => array(
     'title' => 'Eastlake 24 Nappanee',
     'route' => 'eastlake-nappanee',
-    'street' => '158 East Market St.',
+    'street' => '1530 E Market St.',
     'city' => 'Nappanee',
     'state' => 'IN',
     'zip' => '46550',

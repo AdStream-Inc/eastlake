@@ -22,48 +22,17 @@
         <tbody>
           <tr>
             <td>Monday - Friday</td>
-            <td class="text-right">8 AM - 5 PM</td>
-          </tr>
-          <tr>
-            <td>Saturday</td>
-            <td class="text-right">7 AM - 11 PM</td>
-          </tr>
-          <tr>
-            <td>24 hour access</td>
-            <td class="text-right">Access with key fob</td>
-          </tr>
-        </tbody>
-      </table>
-      <h3 class="section-sub-title">Nursery Hours</h3>
-      <table class="table">
-        <thead>
-          <tr>
-            <th>Day</th>
-            <th class="text-right">Hours</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Monday - Thursday</td>
-            <td class="text-right">8:30 AM - 11:30 AM</td>
-          </tr>
-          <tr>
-            <td>Monday - Thursday</td>
-            <td class="text-right">4:30 PM - 7:30 PM</td>
-          </tr>
-          <tr>
-            <td>Friday &amp; Saturday</td>
-            <td class="text-right">8:30 AM - 11:30 AM</td>
+            <td class="text-right">12 PM - 6 PM</td>
           </tr>
         </tbody>
       </table>
       <h3 class="section-sub-title">Amenities</h3>
       <ul class="list-group eastlake-list-group">
-        <li class="list-group-item">Day care</li>
-        <li class="list-group-item">Tiki Tan</li>
         <li class="list-group-item">Life Fitness Strength</li>
         <li class="list-group-item">Life Fitness Cardio</li>
+        <li class="list-group-item">Hammer strength plate loaded</li>
         <li class="list-group-item">Lockers</li>
+        <li class="list-group-item">Showers</li>
         <li class="list-group-item">Towel Service</li>
         <li class="list-group-item">24 hour access</li>
         <li class="list-group-item">Silver Sneakers Access</li>

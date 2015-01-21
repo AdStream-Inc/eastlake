@@ -3,6 +3,8 @@
     items: 1,
     animateOut: 'fadeOut',
     autoplay: true,
+    autoplayTimeout: 10000,
+    autoplayHoverPause: true,
     mouseDrag: false,
     touchDrag: false,
     loop: true,

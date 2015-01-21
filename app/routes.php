@@ -278,4 +278,14 @@ $app->group('/locations', function() use($app, $locations) {
       )
     );
   });
+
+  $app->get('/eastlake-granger', function() use($app, $locations) {
+    $location = $locations['eastlake-granger'];
+    $app->render('gyms/eastlake-granger.php',
+      array(
+        'title' => 'Eastlake 24 Granger',
+        'location' => $location
+      )
+    );
+  });
 });
