@@ -11,6 +11,20 @@
   <h1 class="section-title">{{ title }}</h1>
   <div class="row">
     <div class="col-md-8">
+      <div class="row push-bottom">
+        <div class="col-sm-3 col-xs-6">
+          <a class="gallery-item" href="{{ root }}images/gyms/granger/1.jpg"><img class="img-thumbnail" src="{{ root }}images/gyms/granger/1.jpg" /></a>
+        </div>
+        <div class="col-sm-3 col-xs-6">
+          <a class="gallery-item" href="{{ root }}images/gyms/granger/2.jpg"><img class="img-thumbnail" src="{{ root }}images/gyms/granger/2.jpg" /></a>
+        </div>
+        <div class="col-sm-3 col-xs-6">
+          <a class="gallery-item" href="{{ root }}images/gyms/granger/3.jpg"><img class="img-thumbnail" src="{{ root }}images/gyms/granger/3.jpg" /></a>
+        </div>
+        <div class="col-sm-3 col-xs-6">
+          <a class="gallery-item" href="{{ root }}images/gyms/granger/4.jpg"><img class="img-thumbnail" src="{{ root }}images/gyms/granger/4.jpg" /></a>
+        </div>
+      </div>
       <h3 class="section-sub-title">Staffed Hours</h3>
       <table class="table">
         <thead>

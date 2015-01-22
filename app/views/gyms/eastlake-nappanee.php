@@ -11,6 +11,18 @@
   <h1 class="section-title">{{ title }}</h1>
   <div class="row">
     <div class="col-md-8">
+      <img class="img-thumbnail push-bottom" src="{{ root }}images/gyms/gym-nappanee.jpg" />
+      <div class="row push-bottom">
+        <div class="col-xs-4">
+          <a class="gallery-item" href="{{ root }}images/gyms/nappanee/1.jpg"><img class="img-thumbnail" src="{{ root }}images/gyms/nappanee/1-thumb.jpg" /></a>
+        </div>
+        <div class="col-xs-4">
+          <a class="gallery-item" href="{{ root }}images/gyms/nappanee/2.jpg"><img class="img-thumbnail" src="{{ root }}images/gyms/nappanee/2-thumb.jpg" /></a>
+        </div>
+        <div class="col-xs-4">
+          <a class="gallery-item" href="{{ root }}images/gyms/nappanee/3.jpg"><img class="img-thumbnail" src="{{ root }}images/gyms/nappanee/3-thumb.jpg" /></a>
+        </div>
+      </div>
       <h3 class="section-sub-title">Staffed Hours</h3>
       <table class="table">
         <thead>
