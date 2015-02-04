@@ -4,7 +4,17 @@
 
 {% block main %}
   <h1 class="section-title">{{ title }}</h1>
-  <p>Eastlake Athletic Club will provide you with a variety of the best classes in todays fitness industry. To find out what classes are offered at each club go to <a href="{{root}}locations">Find a Club</a> and click on the group fitness schedule for your club.</p>
+  <div class="row">
+    <div class="col-md-8">
+      <p>Eastlake Athletic Club will provide you with a variety of the best classes in todays fitness industry. To find out what classes are offered at each club go to <a href="{{root}}locations">Find a Club</a> and click on the group fitness schedule for your club.</p>
+    </div>
+    <div class="col-md-4">
+      <div class="sidebar">
+        <h3 class="section-sub-title">Resources</h3>
+        <a href="{{root}}uploads/jan-2015.pdf" target="_blank" class="btn btn-primary btn-block">Group Fitness Schedule</a>
+      </div>
+    </div>
+  </div>
   <!-- <div class="row">
     <div class="col-md-6">
       <div class="panel panel-default">
