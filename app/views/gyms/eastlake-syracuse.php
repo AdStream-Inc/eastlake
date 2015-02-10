@@ -33,16 +33,12 @@
         </thead>
         <tbody>
           <tr>
-            <td>Monday, Wednesday</td>
-            <td class="text-right">9 AM - 5 PM</td>
+            <td>Monday, Wednesday, Friday</td>
+            <td class="text-right">10 AM - 4 PM</td>
           </tr>
           <tr>
             <td>Tuesday, Thursday</td>
-            <td class="text-right">12 PM - 8 PM</td>
-          </tr>
-          <tr>
-            <td>Friday</td>
-            <td class="text-right">8 AM - 4 PM</td>
+            <td class="text-right">12 PM - 6 PM</td>
           </tr>
           <tr>
             <td>24 hour access</td>

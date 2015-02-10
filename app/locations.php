@@ -58,7 +58,7 @@ return array(
   'eastlake-syracuse' => array(
     'title' => 'Eastlake 24 Syracuse',
     'route' => 'eastlake-syracuse',
-    'street' => '734 South Hentington',
+    'street' => '734 South Huntington',
     'city' => 'Syracuse',
     'state' => 'IN',
     'zip' => '46567',
