@@ -44,6 +44,10 @@
         <hr />
         <p>Check out Arul's <a href="#">Chip &amp; Charge</a> column in the Elkhart Truth.</p>
       </div>
+      <div class="sidebar">
+        <h3 class="section-sub-title">Resources</h3>
+        <a href="{{root}}uploads/elite-summer-program-2015.pdf" target="_blank" class="btn btn-primary btn-block">Elite Summer Program</a>
+      </div>
     </div>
   </div>
 {% endblock %}
